@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/background.png");
+    /*background: linear-gradient( 45deg, mediumseagreen, lightgreen ); */
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.jumbotron{
+    text-align: center;
+    background: linear-gradient( 45deg, mediumseagreen, lightgreen ); 
+
+}
+
+.photo {
+    border-radius: 50%;
+    display:block;
+    margin:auto;
+    width: 100%;
+}
+
+.leftColumn {
+
+}
+
+.socialMedia {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    /*background-color: red;*/
+}
+
+.github {
+    /*background-color: orange;*/
+    color: white;
+}
+
+.linkedIn {
+    /*background-color: yellow;*/
+    color: white;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+.panel-heading {
+    text-align: center;
+}
+
+.listItems {
+    text-align: center;
+}
+
+
+
+.rightColumn {
+    background: #4F5D75;
+}
+
+.imageGallery {
+    transition: all 1s ease;
+}
+
+.imageGallery:hover {
+    transform: scale(1.5);
+}
+
+.blurb {
+    color: white;
+    font-size: 24px;    
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icons {
+    background: white; 
+}
+
+.notifaction {
+    background: #BFC0C0;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-bottom: 10px;
+}
+
+.notifactionIcon {
+    display:block;
+    margin:auto;
+    text-align: center;
+    width: 300px;
+}
+
+.notifactionText {
+    font-size: 20px;
+    text-align: center;
+}
+
+.blockquote {
+    background: #EF8354;
+    font-size: 24px;  
+    margin: 0px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.thumbnailRow {
+    margin-top: 10px;
+}
+
+#myCarousel {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.androidScreenshot {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
