@@ -1,10 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    background-image: url("../img/background.png");
-    /*background: linear-gradient( 45deg, mediumseagreen, lightgreen ); */
+background-image: url("../img/background.png");
+/*background: #f4f4f4;    */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 img {
@@ -41,16 +40,22 @@ h1 {
 
 .github {
     /*background-color: orange;*/
-    color: white;
+    /*color: white;*/
 }
 
 .linkedIn {
     /*background-color: yellow;*/
-    color: white;
+    /*color: white;*/
 }
 
 .fa {
     font-size: 30px;
+}
+
+.panel {
+    border: solid;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .panel-heading {
@@ -61,13 +66,12 @@ h1 {
     text-align: center;
 }
 
-
-
 .rightColumn {
-    background: #4F5D75;
+    /*background: red;*/
 }
 
 .imageGallery {
+    padding: 10px;
     transition: all 1s ease;
 }
 
@@ -76,29 +80,46 @@ h1 {
 }
 
 .blurb {
-    color: white;
+    background: #008148;
+    border: solid;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 24px;    
     height: 100%;
+    /*margin: -15px;  */
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .icons {
-    background: white; 
+    /*background: orange;*/
+    border: solid;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    /*background: white;*/
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .notifaction {
-    background: #BFC0C0;
+    /*background: #BFC0C0;*/
     margin-left: -15px;
     margin-right: -15px;
+    margin-top: -15px;
     padding-bottom: 10px;
 }
 
 .notifactionIcon {
     display:block;
     margin:auto;
+    transition: all 1s ease;
     text-align: center;
     width: 300px;
+}
+
+.notifactionIcon:hover {
+    transform: rotate(360deg);
 }
 
 .notifactionText {
@@ -106,25 +127,36 @@ h1 {
     text-align: center;
 }
 
-.blockquote {
-    background: #EF8354;
+.well {
+    /*background: #EF8354;*/
     font-size: 24px;  
     margin: 0px;
     margin-left: -15px;
     margin-right: -15px;
 }
 
-.thumbnailRow {
-    margin-top: 10px;
+.experience {
+    border: solid;
+    border-radius:  10px;
+    /*margin-bottom: -50px;*/
+    /*margin-left: -15px;*/
+    margin-right: -50px;
+    margin-top: 50px;
+    width: 100%;
 }
 
-#myCarousel {
-    margin-left: -15px;
-    margin-right: -15px;
+.list-group-item {
+    background: transparent;
 }
 
-.androidScreenshot {
-    width: 50%;
-    margin: auto;
-    text-align: center;
+.blockquote {
+    font-size: 24px;
+}
+
+.portfolioHeading {
+    font-size: 50px;
+}
+
+.androidHeading {
+    margin-top: 20px;
 }
