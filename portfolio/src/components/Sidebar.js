@@ -1,5 +1,4 @@
 import React from 'react'
-import { browserHistory } from 'react-router'
 
 class Sidebar extends React.Component {
     render() {
