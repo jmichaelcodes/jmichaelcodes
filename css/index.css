@@ -18,19 +18,112 @@ h1 {
     text-align: center;
 }
 
-.jumbotron {
+#hamburgerButton {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    #hamburgerButton {
+        display: inline-block;
+    }
+}
+
+.heroContainer {
+    /* position: relative;
     text-align: center;
-    background-image: url("../img/hero.jpg");
+    color: white; */
+    position: relative;
+    display: table;
+    height: 300px;
+    background: url('../img/background_masked.jpg');
+    background-size: cover;
+}
+
+.heroContent {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contentContainer {
+    text-align: center;
+    color: bisque;
+    margin: 0 10%;
+    word-break: break-word;
+}
+
+.jumbotron {
+    color: white;
+    text-align: center;
+    background-image: url("../img/background.jpg");
     background-size: cover;
     height: 100vh;
+}
 
+.heroContent p {
+    padding-bottom: 0px;
+}
+
+.heroContent a {
+   color: bisque;
+   font-size: 20px;
+   text-decoration: none;
+   transition: all 1s ease;
+}
+
+.heroContent a:hover {
+   color: white;
+   transform: scale(1.2);
+}
+
+.heroDivider {
+    border: solid rgba(255, 255, 255, 0.6) 1px;
+    margin: 0 auto;
+    width: 80%
+}
+
+.linksContainer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 17px;
+    text-align: center;
+    width: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+    #desktopNav {
+        display: none
+    }
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.circleImage {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .button-collapse {
     color: white;
-    position: fixed;
-    right: 95vw;
-    top: 5vh;
+    position: absolute;
+    left: 15px;
+    top: 25px;
 }
 
 #slide-out {
@@ -53,7 +146,8 @@ h1 {
 
 .blurbText {
     font-size: 20px;
-    padding-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .blurbTitle {
@@ -78,6 +172,15 @@ h1 {
 
 .imageGallery:hover {
     transform: scale(1.5);
+}
+
+#react-native {
+    transform: scale(1.15);
+    margin-top: 7px;
+}
+
+#jquery {
+    transform: scale(.9);
 }
 
 .notifaction {

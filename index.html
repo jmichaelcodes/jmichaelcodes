@@ -18,17 +18,12 @@
 <body>
 
     <ul id="slide-out" class="side-nav">
-        <li><a href="#jumbotron" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-home white-text"></i><span class="white-text">
-        Home</span></a></li>
         <li><a href="#blurb" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-user white-text"></i><span class="white-text">
         About Me</span></a></li>
         <li><a href="#skills" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-list white-text"></i><span class="white-text">
         Skills</span></a></li>
-        <li><a href="#testimonials" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-comments-o white-text"></i><span class="white-text">
-        Testimonials</span></a></li>
-        <li><a href="#notifaction" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-mobile white-text"></i><span class="white-text">
-        Notifaction</span></a></li>
-        <li><a href="#experience" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-history white-text"></i><span class="white-text">
+        <li>
+        <a href="#experience" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-history white-text"></i><span class="white-text">
         Experience</span></a></li>
         <li><a href="#portfolio" class="waves-effect" onclick="$('.button-collapse').sideNav('hide')"><i class="fa fa-picture-o white-text"></i><span class="white-text">
         Portfolio</span></a></li>
@@ -47,107 +42,84 @@
         LinkedIn</span></a>
         </li>
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse" id="hamburgerButton"><i class="fa fa-bars black-text"></i></a>
+    <a href="#" data-activates="slide-out" class="button-collapse" id="hamburgerButton"><i class="fa fa-bars"></i></a>
 
-
-    <div class="jumbotron" id="jumbotron">
-        <h1>J Michael Codes</h1>
-        <p>Front-End Web & Android Development</p>
-        <p><a class="btn btn-primary btn-lg" target="_blank" href="resume20172.pdf" role="button">View Resume</a></p>
-    </div>
-
-    <section class="blurb" id="blurb">
-        <h1 id="blurbTitle" class="text-center white-text">About Me</h1>
-        <div class="container white-text blurbText">
-            I am a front-end developer who has developed several applications, both as a team member and individually, with a personal
-            application in the Google Play Store. Great understanding of HTML5 and CSS3 allows me to create attractive user
-            interfaces, while skills in JavaScript and related frameworks, such as React, keep me at the forefront of front-end
-            development.
+    <div class="heroContainer">
+        <!-- <img src="./img/background_masked.jpg" alt="" style="width:100%;"> -->
+        <div class="heroContent">
+            <div class="contentContainer">
+                <h1>J Michael Codes</h1>
+                <h4>Front-End Web & Android Development</h4>
+                <p class="blurbText">
+                    I am a front-end developer who has developed several mobile applications and websites, both as a team member and individually. Great understanding of HTML5 and CSS3 allows me to create attractive user interfaces, while skills in JavaScript and related frameworks, such as React and React Native, keep me at the forefront of front-end development on both web and mobile.
+                </p>
+                <div class="circleImage">
+                    <img src="./img/Julius_lowres.jpg"/>
+                </div>
+                <div id="desktopNav">
+                    <div class="heroDivider"></div>
+                    <div class="linksContainer">
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#footer">Contact Me</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
 
 
     <section class="skills" id="skills">
         <div class="row">
-            <div class="col s1 offset-s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 col-sm-offset-1 imageGallery">
                 <img class="image" src="./img/android2.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/bootstrap.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/css.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/git.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/html.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/java.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 imageGallery">
                 <img class="image" src="./img/javascript.jpeg" />
             </div>
-            <!--<div class="col s1 imageGallery">
+            <!--<div class="col-sm-1 imageGallery">
                 <img class="image" src="./img/bootstrap.png" />
             </div>-->
-            <div class="col s1 imageGallery">
-                <img class="image" src="./img/jquery.png" />
+            <div class="col-sm-1 col-xs-4 imageGallery">
+                <img id="jquery" class="image" src="./img/jquery.png" />
             </div>
-            <div class="col s1 imageGallery">
-                <img class="image" src="./img/node.png" />
+            <div class="col-sm-1 col-xs-4 imageGallery">
+                <img id="react-native" class="image" src="./img/react_native.png" />
             </div>
-            <div class="col s1 imageGallery">
+            <div class="col-sm-1 col-xs-4 col-sm-offset-0 col-xs-offset-4 imageGallery">
                 <img class="image" src="./img/react.png" />
             </div>
-            <!--<div class="col s1 imageGallery">
+            <!--<div class="col-sm-1 imageGallery">
                 <img class="image" src="./img/vscode.png" />
             </div>-->
         </div>
     </section>
 
-
-    <section class="testimonials" id="testimonials">
-        <div class="col s12">
-            <div class="card darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title black-text">Testimonials</span>
-                    <blockquote class="blockquote">
-                        <p class="black-text"> “Julius has been an absolute pleasure to work with. He is bright, focused, and incredibly driven.
-                            He has a very keen eye for design & UI/UX work and is always up to date on the newest design
-                            guidelines. He has been a wonderful coworker and team member.”</p>
-                        <footer>Elyse Swoverland <cite title="Source Title">Senior Developer</cite></footer>
-                    </blockquote>
-
-                    <blockquote>
-                        <p class="black-text">"As an apprentice, Julius made significant contributions on a large team, jumped into an existing
-                            code base to fix several bugs, and acted as the sole developer on a few projects (performing
-                            very well with very little guidance). Julius has a real passion for UI/UX and brought his knowledge
-                            to the Android team, even giving a talk at a local developer meetup. I would happily serve as
-                            a reference for anyone looking to hire Julius!"</p>
-                        <footer>Tiffany Trusty <cite title="Source Title">Director of Apprenticeship</cite></footer>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="notifaction" id="notifaction">
-        <img class="notifactionIcon" href="https://play.google.com/store/apps/details?id=jmichaelcodes.notifaction" src="./img/notifaction.png"
-        />
-        <div class="notifactionText"><a href="https://play.google.com/store/apps/details?id=jmichaelcodes.notifaction">NTFXN Notification Shortcuts</a>
-            <br /> Available in the Google Play Store
-        </div>
-    </section>
-
-
-
     <section class="experience" id="experience">
         <ul class="collection with-header">
             <li class="collection-header">
                 <h4>Experience</h4>
+            </li>
+            <li class="collection-item"><span class="title">Level Up Development</span><span class="pull-right">June 2017 - Present</span>
+                <p><em>Software Developer</em><br/> Worked on teams and solo to complete several web and mobile applcations for various clients. Technologies include HTML5, CSS3, Javascript, jQuery, React, React Native, Git, and more.
+                </p>
             </li>
             <li class="collection-item"><span class="title">The Iron Yard</span><span class="pull-right">Jan 2017 - April 2017</span>
                 <p><em>Front End Student</em><br/> Studied Front End languages and frameworks, including: HTML5, Bootstrap,
@@ -168,25 +140,55 @@
     </section>
 
     <section class="portfolio" id="portfolio">
-        <div class="portfolioTitle text-center">Screenshots</div>
+        <div class="portfolioTitle text-center">Portfolio</div>
         <div class="carousel">
-            <a class="carousel-item" href="https://jmichaelcodes.github.io/w1d4-recreate-a-mockup/"><img src="./img/screenshots/skinnyties.png"></a>
-            <a class="carousel-item" href="https://jmichaelcodes.github.io/w2d4-recreate-surf-paddle/"><img src="./img/screenshots/surfandpaddle.png"></a>
-            <a class="carousel-item" href="https://sock-o-ramma.herokuapp.com/"><img src="./img/screenshots/sockoramma.png"></a>
-            <a class="carousel-item" href="./img/screenshots/coachstrplans.png"><img src="./img/screenshots/coachstrplans.png"></a>
-            <a class="carousel-item" href="./img/screenshots/coachstrplan.png"><img src="./img/screenshots/coachstrplan.png"></a>
-            <a class="carousel-item" href="./img/screenshots/coachstrdrills.png"><img src="./img/screenshots/coachstrdrills.png"></a>
-            <a class="carousel-item" href="./img/screenshots/coachstrdrill.png"><img src="./img/screenshots/coachstrdrill.png"></a>
-            <a class="carousel-item" href="./img/screenshots/coachstrnew.png"><img src="./img/screenshots/coachstrnew.png"></a>
-            <a class="carousel-item" href="./img/screenshots/noteslist.png"><img src="./img/screenshots/noteslist.png"></a>
-            <a class="carousel-item" href="./img/screenshots/noteempty.png"><img src="./img/screenshots/noteempty.png"></a>
-            <a class="carousel-item" href="./img/screenshots/4.png"><img src="./img/screenshots/4.png"></a>
-            <a class="carousel-item" href="./img/screenshots/5.png"><img src="./img/screenshots/5.png"></a>
-            <a class="carousel-item" href="./img/screenshots/1.png"><img src="./img/screenshots/1.png"></a>
-            <a class="carousel-item" href="./img/screenshots/2.png"><img src="./img/screenshots/2.png"></a>
-            <!--<a class="carousel-item" href="./img/screenshots/perceivant.png"><img src="./img/screenshots/perceivant.png"></a>-->
-            <a class="carousel-item" href="./img/screenshots/cummins.JPG"><img src="./img/screenshots/cummins.JPG"></a>
-            <a class="carousel-item" href="./img/screenshots/materialnotes.png"><img src="./img/screenshots/materialnotes.png"></a>
+                <a class="carousel-item" href="./img/screenshots/add_meal.png" target="_blank">
+                    <img src="./img/screenshots/add_meal.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/profile_menu.png" target="_blank">
+                    <img src="./img/screenshots/profile_menu.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/patient_library.png" target="_blank">
+                    <img src="./img/screenshots/patient_library.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/kyne_1.png" target="_blank">
+                    <img src="./img/screenshots/kyne_1.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/kyne_2.png" target="_blank">
+                    <img src="./img/screenshots/kyne_2.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/coachstrdrills.png" target="_blank">
+                    <img src="./img/screenshots/coachstrdrills.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/coachstrnew.png" target="_blank">
+                    <img src="./img/screenshots/coachstrnew.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/coachstrplan.png" target="_blank">
+                    <img src="./img/screenshots/coachstrplan.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/sockoramma.png" target="_blank">
+                    <img src="./img/screenshots/sockoramma.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/skinnyties.png" target="_blank">
+                    <img src="./img/screenshots/skinnyties.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/surfandpaddle.png" target="_blank">
+                    <img src="./img/screenshots/surfandpaddle.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/4.png" target="_blank">
+                    <img src="./img/screenshots/4.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/3.png" target="_blank">
+                    <img src="./img/screenshots/3.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/1.png" target="_blank">
+                    <img src="./img/screenshots/1.png"></a>
+                <a class="carousel-item" href="./img/screenshots/perceivant.png" target="_blank">
+                    <img src="./img/screenshots/perceivant.png">
+                </a>
+                <a class="carousel-item" href="./img/screenshots/cummins.JPG" target="_blank">
+                    <img src="./img/screenshots/cummins.JPG">
+                </a>
         </div>
 
     </section>
@@ -194,37 +196,41 @@
     <section class="projects" id="projects">
         <ul class="collection with-header">
             <li class="collection-header">
-                <h4>Projects</h4>
+                <h4>Selected Projects</h4>
             </li>
-            <li class="collection-item"><a target="_blank" href="http://coachstr.herokuapp.com/"><span class="title titleLink">Coachstr</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>Practice Management</em><br/>Connected with Ruby back-end to complete final project at The Iron Yard. (CSS3, HTML5, Material Design, React.js)
+            <li class="collection-item"><span class="title">Dragos Web Marketing</span>
+                <div class="chip">jQuery</div><div class="chip">HTML5</div><div class="chip">CSS3</div><span class="pull-right">Fall 2017 – Present</span>
+                <p><em>Marketing Website</em><br/> Responsible maintenance, updates, and project management.
                 </p>
             </li>
-            <li class="collection-item"><a target="_blank" href="https://sock-o-ramma.herokuapp.com/"><span class="title titleLink">Sock-o-Rama</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>E-Commerce</em><br/> Created e-commerce app using React.js and connecting with Ruby back-end for Iron
-                    Yard project. (Bootstrap, CSS3, HTML5, React.js)
+            <li class="collection-item"><span class="title">React Component Library</span>
+                <div class="chip">React</div><div class="chip">HTML5</div><div class="chip">CSS3</div><span class="pull-right">Summer 2018</span>
+                <p><em>Component Library</em><br/> Completely custom component library.
                 </p>
             </li>
-            <li class="collection-item"><a target="_blank" href="https://github.com/jmichaelcodes/w7d4-notes"><span class="title titleLink">React Notes</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>Utility</em><br/> Created note-taking app for Iron Yard project. (Bootstrap, CSS3, HTML5, React.js)
+            <li class="collection-item"><span class="title">Level Up Development Marketing</span>
+                <div class="chip">HTML5</div><div class="chip">CSS3</div><div class="chip">React Bootstrap</div><div class="chip">REST</div><span class="pull-right">Spring 2018</span>
+                <p><em>Marketing Website</em><br/> Responsible for all front end development.
                 </p>
             </li>
-            <li class="collection-item"><a target="_blank" href="https://github.com/jmichaelcodes/w5d2-recreate-etsy-search"><span class="title titleLink">Recreate Etsy</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>E-Commerce</em><br/> Recreated Etsy for Iron Yard project. (Bootstrap, CSS3, HTML5)
+            <li class="collection-item"><span class="title">NoshCare</span>
+                <div class="chip">React Native (Android/iOS)</div><div class="chip">GraphQL</div><span class="pull-right">Spring 2018</span>
+                <p><em>Health & Wellness</em><br/> Primary front-end developer.
+                </p>
+            </li>
+            <li class="collection-item"><span class="title">KYNE  - Migraine Financial Impact Tool</span>
+                <div class="chip">React</div><div class="chip">HTML5</div><div class="chip">CSS3</div><span class="pull-right">Winter 2017</span>
+                <p><em>Utility</em><br/> Solo project delivered in 5 weeks.
                 </p>
             </li>
             <li class="collection-item"><a target="_blank" href="https://jmichaelcodes.github.io/w2d4-recreate-surf-paddle/"><span class="title titleLink">Recreate a Responsive Blog</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>Blog</em><br/> Recreated Surf & Paddle Blog based on UI rendering for Iron Yard project. (CSS3, Flexbox, HTML5)
+                <div class="chip">HTML5</div><div class="chip">CSS3</div><span class="pull-right">Spring 2017</span>
+                <p><em>Blog</em><br/> Recreated Surf & Paddle Blog based on UI rendering for second Iron Yard project. (CSS3, HTML5)
                 </p>
             </li>
             <li class="collection-item"><a target="_blank" href="https://jmichaelcodes.github.io/w1d4-recreate-a-mockup/"><span class="title titleLink">Recreate a Mockup</span></a>
-                <div class="chip">Web</div><span class="pull-right">Spring 2017</span>
-                <p><em>E-Commerce</em><br/> Recreated SkinnyTies.com for Iron Yard project. (CSS3, Flexbox, HTML5)
+                <div class="chip">HTML5</div><div class="chip">CSS3</div><span class="pull-right">Spring 2017</span>
+                <p><em>E-Commerce</em><br/> Recreated SkinnyTies.com for first Iron Yard project. (CSS3, HTML5)
                 </p>
             </li>
             <li class="collection-item"><span class="title">AIMS</span>
@@ -245,26 +251,10 @@
                 <p><em>Social Networking/Fitness</em><br/> Responsible for UI. Managed other developers.
                 </p>
             </li>
-            <li class="collection-item"><span class="title">Bluetooth Project</span>
-                <div class="chip">Android</div><span class="pull-right">Fall 2015</span>
-                <p><em>Bluetooth Reader</em><br/> Responsible for all aspects of project. Connected to ODB-II readers.
-                </p>
-            </li>
             <li class="collection-item">
                 <a target="_blank" href="https://play.google.com/store/apps/details?id=com.elevenfifty.cannabest&hl=en"><span class="title titleLink">CannaBest</span></a>
                 <div class="chip">Android</div><span class="pull-right">Fall 2015</span>
-                <p><em>Medical Information</em><br/> Reworked API calls, graphs, and calculations, as well as fixing any bugs
-                    found, for Version 2.
-                </p>
-            </li>
-            <li class="collection-item"><span class="title">Perceivant</span>
-                <div class="chip">Android</div><span class="pull-right">Fall 2015</span>
-                <p><em>Wellness Tracking</em><br/> Responsible for all aspects of project, including project management.
-                </p>
-            </li>
-            <li class="collection-item"><span class="title">Do</span>
-                <div class="chip">Android</div><span class="pull-right">Summer 2015</span>
-                <p><em>Social Networking</em><br/> Responsible for UI. Produced photo tagging, commenting, and more.
+                <p><em>Medical Information</em><br/> Reworked API calls, graphs, and calculations, as well as fixing any bugs found, for Version 2.
                 </p>
             </li>
         </ul>
@@ -287,7 +277,7 @@
                         <li>
                             <a class="grey-text text-lighten-3" target="_blank" href="https://www.linkedin.com/in/jmichaelcodes"><i class="fa fa-linkedin white-text"></i> LinkedIn</a>
                         </li>
-                        <li><a class="grey-text text-lighten-3" target="_blank" href="resume20172.pdf"><i class="fa fa-file-text white-text"></i>  Resume</a></li>
+                        <li><a class="grey-text text-lighten-3" target="_blank" href="resume2018.pdf"><i class="fa fa-file-text white-text"></i>  Resume</a></li>
                     </ul>
                 </div>
             </div>
