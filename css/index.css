@@ -28,10 +28,16 @@ h1 {
     }
 }
 
+
+
 .heroContainer {
     /* position: relative;
     text-align: center;
     color: white; */
+    /* color: rgb(55, 118, 111);
+    color: rgb(11, 45, 122);
+    color: rgb(3, 10, 22); */
+    color: rgb(250, 228, 220);
     position: relative;
     display: table;
     height: 300px;
@@ -46,7 +52,7 @@ h1 {
 
 .contentContainer {
     text-align: center;
-    color: bisque;
+    color: color: rgb(250, 228, 220);;
     margin: 0 10%;
     word-break: break-word;
 }
@@ -64,7 +70,7 @@ h1 {
 }
 
 .heroContent a {
-   color: bisque;
+   color: rgb(250, 228, 220);
    font-size: 20px;
    text-decoration: none;
    transition: all 1s ease;
@@ -211,12 +217,13 @@ h1 {
 }
 
 .portfolio {
-    background: #9BC1BC;
+    background: rgb(55, 118, 111);
     margin-top: -15px;
     margin-bottom: -15px;
 }
 
 .portfolioTitle {
+    color: rgb(250, 228, 220);
     font-size: 50px;
     margin-bottom: -70px;
     padding-top: 30px;
